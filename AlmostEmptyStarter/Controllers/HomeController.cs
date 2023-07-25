@@ -18,5 +18,10 @@ namespace AlmostEmptyStarter.Controllers
         {
             return View();
         }
+
+        public IActionResult Employees()
+        {
+            return View();
+        }
     }
 }
