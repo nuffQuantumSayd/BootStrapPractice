@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>@ViewData["Title"]</title>
+
+		<link rel="stylesheet" href="~/css/site.css" />
+		<script src="~/js/site.js"></script>
+	</head>
+	<body>
+		<a asp-controller="Home" asp-action="Index">Home</a>
+		<a asp-controller="Home" asp-action="HelloWorld">Hello World</a>
+		<a asp-controller="Home" asp-action="About">About</a>
+		<h1>My first ASP.NET Website</h1>
+		@*ASP.NET will replace the RenderBody call
+			with content from the view that uses 
+			this layout
+		*@
+		@RenderBody()
+
+		<footer>
+			&copy;@DateTime.Today.Year
+		</footer>
+	</body>
+</html>
