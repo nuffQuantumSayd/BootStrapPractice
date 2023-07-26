@@ -23,5 +23,10 @@ namespace AlmostEmptyStarter.Controllers
         {
             return View();
         }
+
+        public IActionResult Topics()
+        {
+            return View();
+        }
     }
 }
